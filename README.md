@@ -1,5 +1,5 @@
 # shopBack
->   该项目是针对shopadmin做的后端，主要应用与返回shopadmin所需数据。
+>   该项目是针对shopadmin做的后端，主要应用与返回shopadmin所需数据。``
 
 ```
 - 1.bin：是用来启动应用（服务器）

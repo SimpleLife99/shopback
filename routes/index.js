@@ -18,6 +18,7 @@ router.get('/', function (req, res, next) {
 router.post('/login', async (req, res, next) => {
     // post 传值 Content-type = 'application/json'
     let params = req.body
+    console.log(req.body)
     let info = await mysql.query(sql.login, [params.userName,params.password])
     res.json({
         data:info.data[0],
