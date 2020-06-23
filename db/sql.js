@@ -1,4 +1,4 @@
-const sql ={
-    login:'SELECT * FROM users WHERE user_name = ? AND `password` = ?'
+const sql = {
+    login: 'SELECT * FROM administrators WHERE user_name = ?'
 }
 module.exports = sql

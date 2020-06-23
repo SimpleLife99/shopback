@@ -1,4 +1,4 @@
-var express = require('express');
+var express = require('express')
 const mysql = require('./../db')
 const sql = require('./../db/sql')
 var router = express.Router();
@@ -18,10 +18,9 @@ router.get('/', function (req, res, next) {
 router.post('/login', async (req, res, next) => {
     // post 传值 Content-type = 'application/json'
     let params = req.body
-    console.log(req.body)
-    let info = await mysql.query(sql.login, [params.userName,params.password])
+    let info = await mysql.query(sql.login, [params.userName, params.password])
     res.json({
-        data:info.data[0],
+        data: info.data[0],
         errorCode: info.errorCode
     })
 })
