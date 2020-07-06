@@ -5,9 +5,10 @@ if (env === 'development') {
     mysql_conf = {
         host: 'localhost',
         user: 'root',
-        port:'3308',
+        // port:'3308',     // 笔记本
+        port:'3306',        // 公司电脑
         password: 'root',
-        database: 'shopadmin'
+        database: 'shopadmin',
     }
 }
 if (env === 'production') {

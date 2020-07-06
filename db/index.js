@@ -15,6 +15,7 @@ class DB {
         return new Promise((resolve, reject) => {
             this.db.query(sql, par, (error, results) => {
                 if (error) {
+                    console.log('error',error)
                     reject(error)
                     return
                 }
