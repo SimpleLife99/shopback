@@ -4,6 +4,7 @@ const stateCode = require('./../config/stateCode')
 
 class DB {
     constructor() {
+        console.log("config",config)
         this.db = mysql.createConnection(config)
         this.db.connect((err) => {
             console.log(err)

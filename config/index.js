@@ -1,7 +1,5 @@
-const env = process.env.NODE_ENV       // 环境参数
-// SET NODE_ENV=development
 let mysql_conf
-if (env === 'development') {
+if (process.env.NODE_ENV === 'development') {
 //    测试环境
     mysql_conf = {
         host: 'localhost',
@@ -10,7 +8,7 @@ if (env === 'development') {
         database: 'shopadmin',
     }
 }
-if (env === 'production') {
+if (process.env.NODE_ENV === 'production') {
     //生产环境
     mysql_conf = {
         host: 'localhost',
