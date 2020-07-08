@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ./bin/www",
-    "start": "node-dev ./bin/www"
+    "dev": "set NODE_ENV=development && node ./bin/www",
+    "start": "set NODE_ENV=development && node-dev ./bin/www",
+    "build": "set NODE_ENV=production && node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

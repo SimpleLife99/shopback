@@ -6,6 +6,7 @@ class DB {
     constructor() {
         this.db = mysql.createConnection(config)
         this.db.connect((err) => {
+            console.log(err)
             if (err) console.log('数据库连接失败')
             console.log('数据库连接成功')
         })
