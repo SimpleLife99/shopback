@@ -4,11 +4,12 @@ const stateCode = require('./../config/stateCode')
 
 class DB {
     constructor() {
-        console.log("config",config)
         this.db = mysql.createConnection(config)
         this.db.connect((err) => {
-            console.log(err)
-            if (err) console.log('数据库连接失败')
+            if (err) {
+                console.log('数据库连接失败')
+                console.log(err)
+            }
             console.log('数据库连接成功')
         })
     }
