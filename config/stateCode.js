@@ -1,5 +1,5 @@
 const stateCode = {
-    success: '200',
+    success: '0',
     noContent: '204',
     error: '400',
     notFind: '404',
