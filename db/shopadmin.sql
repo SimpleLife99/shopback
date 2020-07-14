@@ -11,7 +11,7 @@
  Target Server Version : 80018
  File Encoding         : 65001
 
- Date: 25/06/2020 11:40:47
+ Date: 14/07/2020 23:36:24
 */
 
 SET NAMES utf8mb4;
@@ -38,6 +38,7 @@ CREATE TABLE `administrators`  (
 -- Records of administrators
 -- ----------------------------
 INSERT INTO `administrators` VALUES (1, 1, 'suqi', '123', 'MrRight', '18132807673', '苏琪', 'http://tfs.alipayobjects.com/images/partner/T1UV4nXjBfXXXXXXXX', 'admin');
+INSERT INTO `administrators` VALUES (2, 1, '15600001111', '666888', 'huiyuan', '15600001111', '中皖知托付', NULL, 'admin');
 
 -- ----------------------------
 -- Table structure for shop
