@@ -4,7 +4,7 @@ if (process.env.NODE_ENV === 'development') {
     mysql_conf = {
         host: 'localhost',
         user: 'root',
-        port: '3308',
+        port: '3306',
         password: 'root',
         database: 'shopadmin',
     }
@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'development') {
     mysql_conf = {
         host: 'localhost',
         user: 'root',
-        port: '3308',
+        port: '3306',
         password: 'root',
         database: 'shopadmin'
     }
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'development') {
     mysql_conf = {
         host: 'localhost',
         user: 'root',
-        port: '3308',
+        port: '3306',
         password: 'root',
         database: 'shopadmin',
     }
